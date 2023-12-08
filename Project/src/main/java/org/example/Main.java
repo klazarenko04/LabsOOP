@@ -7,6 +7,7 @@ public class Main {
         System.out.println(calculator.add("1"));       // Output: 1
         System.out.println(calculator.add("1,2"));     // Output: 3
         System.out.println(calculator.add("1,2,3"));   // Output: 6
-        System.out.println(calculator.add("1,2,3,4")); // Output: 10
+        System.out.println(calculator.add("1\n2,3"));  // Output: 6
+        System.out.println(calculator.add("1,\n"));    // Output: 1 (ignores the invalid entry)
         }
     }

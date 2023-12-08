@@ -31,9 +31,19 @@ class StringCalculatorTest {
     }
 
     @Test
-    public void testFourNumbers() {
+    public void testNewDelimetr() {
         StringCalculator calculator = new StringCalculator();
-        assertEquals(10, calculator.add("1,2,3,4"));
+        assertEquals(6, calculator.add("1\n2\n3"));
     }
 
+    @Test
+    public void testTwoDelimetrs() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(6, calculator.add("1\n2,3"));
+    }
+    @Test
+    public void testExtraDelimetr() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(1, calculator.add("1\n"));
+    }
 }
