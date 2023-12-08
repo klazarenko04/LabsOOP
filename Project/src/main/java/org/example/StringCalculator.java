@@ -9,8 +9,8 @@ public class StringCalculator {
         String[] nums = numbers.split(",");
         int sum = 0;
 
-        for (int i = 0; i < Math.min(nums.length, 2); i++) {
-            sum += parseNumber(nums[i]);
+        for (String num : nums) {
+            sum += parseNumber(num);
         }
 
         return sum;

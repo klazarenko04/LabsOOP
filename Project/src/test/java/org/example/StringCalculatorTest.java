@@ -27,7 +27,13 @@ class StringCalculatorTest {
     @Test
     public void testMoreThenTwoNumbers() {
         StringCalculator calculator = new StringCalculator();
-        assertEquals(3, calculator.add("1,2,3"));
+        assertEquals(6, calculator.add("1,2,3"));
+    }
+
+    @Test
+    public void testFourNumbers() {
+        StringCalculator calculator = new StringCalculator();
+        assertEquals(10, calculator.add("1,2,3,4"));
     }
 
 }
